@@ -3,8 +3,8 @@ consumer:
 producer:
     ip: 172.23.239.127
     port: 9092
-server:
-    port: 8433
+#server:
+#    port: 8433
 spring:
     data:
         mongodb:

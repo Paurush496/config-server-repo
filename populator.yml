@@ -1,5 +1,5 @@
-server:
-    port: 8067
+#server:
+#    port: 8067
 spring:
     data:
         neo4j:
