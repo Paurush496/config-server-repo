@@ -16,26 +16,28 @@ zuul:
             url: http://localhost:8144
         user-registration-service:
             url: http://localhost:8182
-    host:
-        socket-timeout-millis: 30000
-#eureka:         #tells about the Eureka server details and its refresh time
-#    instance:
-#        leaseRenewalIntervalInSeconds: 1
-#        leaseExpirationDurationInSeconds: 2
-#    client:
-#        serviceUrl:
-#            defaultZone: http://127.0.0.1:8091/eureka/
-#        healthcheck:
-#            enabled: true
-#        lease:
-#            duration: 5
+    # host:
+    #     socket-timeout-millis: 30000
+eureka:         #tells about the Eureka server details and its refresh time
+   instance:
+       leaseRenewalIntervalInSeconds: 1
+       leaseExpirationDurationInSeconds: 2
+   client:
+       service-url:
+           defaultZone: http://localhost:8066/eureka/
+       register-with-eureka: true
+       fetch-registry: true
+       healthcheck:
+           enabled: true
+       lease:
+           duration: 5
 management:
     security:
         enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc.
 #tells about the Eureka server details and its refresh time
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8066/eureka/
-    register-with-eureka: true
-    fetch-registry: true
+# eureka:
+#   client:
+#     service-url:
+#       defaultZone: http://localhost:8066/eureka/
+#     register-with-eureka: true
+#     fetch-registry: true
