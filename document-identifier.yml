@@ -8,6 +8,17 @@ spring:
       database: mydatabase
       port: 27017
       uri: mongodb://127.0.0.1/mydatabase
+eureka:         #tells about the Eureka server details and its refresh time
+    instance:
+        leaseRenewalIntervalInSeconds: 1
+        leaseExpirationDurationInSeconds: 2
+    client:
+        serviceUrl:
+            defaultZone: http://127.0.0.1:8091/eureka/
+        healthcheck:
+            enabled: true
+        lease:
+            duration: 5
 
 kafka:
   port: localhost:9092
