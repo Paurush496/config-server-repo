@@ -11,6 +11,9 @@ spring:
             database: mydatabase
             port: 27017
             uri: mongodb://127.0.0.1/mydatabase
+management:
+    security:
+        enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc.
 eureka:         #tells about the Eureka server details and its refresh time
     instance:
         leaseRenewalIntervalInSeconds: 1
