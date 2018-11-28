@@ -1,5 +1,5 @@
-server:
-    port: 8094
+#server:
+#    port: 8094
 
 folder:
     path: /knowledge-vault/extractor-service/src/main/resources/
