@@ -23,14 +23,13 @@ eureka:         #tells about the Eureka server details and its refresh time
        leaseRenewalIntervalInSeconds: 1
        leaseExpirationDurationInSeconds: 2
    client:
-       service-url:
+       serviceUrl:
            defaultZone: http://localhost:8066/eureka/
        register-with-eureka: true
        fetch-registry: true
-       healthcheck:
-           enabled: true
-       lease:
-           duration: 5
+    instance:
+      hostname: localhost
+      leaseRenewalIntervalInSeconds: 10
 management:
     security:
         enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc.
