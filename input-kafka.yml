@@ -25,3 +25,5 @@ eureka:         #tells about the Eureka server details and its refresh time
             enabled: true
         lease:
             duration: 5
+        register-with-eureka: true
+        fetch-registry: true
