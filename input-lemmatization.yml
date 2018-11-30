@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: input-lemmatization
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.23.239.143:8091/eureka/
+    register-with-eureka: true
+    fetch-registry: true
