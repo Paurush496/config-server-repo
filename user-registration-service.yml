@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: user-registration-service
+  data:
+  mongodb:
+    uri: mongodb://localhost/userDetails
+management:
+  security:
+    enabled: false
