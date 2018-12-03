@@ -1,9 +1,15 @@
+management:
+  security:
+    enabled: false
 spring:
   application:
     name: user-registration-service
   data:
   mongodb:
     uri: mongodb://localhost/userDetails
-management:
-  security:
-    enabled: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8091/eureka/
+    register-with-eureka: true
+    fetch-registry: true
