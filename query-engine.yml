@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: query-engine
+  data:
+    mongodb:
+      database: mydatabase
+      port: 27017
+      uri: mongodb://127.0.0.1/mydatabase
+
+#tells about the Eureka server details and its refresh time
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8091/eureka/
+  client:
+    register-with-eureka: true
+    fetch-registry: true
