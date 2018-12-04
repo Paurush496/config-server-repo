@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: zuul-gateway
+ribbon:
+    eureka:
+        enabled: false
+zuul:
+    routes:
+        extractor-service:
+            url: http://localhost:8094
+        document-identifier:
+            url: http://localhost:8083
+        input-kafka:
+            url: http://localhost:8148
+        user-registration-service:
+            url: http://localhost:8182
+        query-engine:
+            url: http://localhost:8185
+#tells about the Eureka server details and its refresh time
+eureka:         
+    instance:
+        leaseRenewalIntervalInSeconds: 1
+        leaseExpirationDurationInSeconds: 2
+    client:
+        serviceUrl:
+            defaultZone: http://127.0.0.1:8091/eureka/
+        healthcheck:
+            enabled: true
+        lease:
+            duration: 5
+management:
+    security:
+        enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc.
+logging:
+    level:
+        com.example.howtodoinjava: DEBUG
