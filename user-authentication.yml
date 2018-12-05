@@ -9,9 +9,9 @@ spring:
 #   driverClassName: com.mysql.jdbc.Driver# JPA properties
 #   database-platform: org.hibernate.dialect.MySQL5InnoDBDialectDialect
   jpa:
-    openInView: false
+#    openInView: false
     show_sql: true
-    generate-ddl: false
+    generate-ddl: true
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5Dialect
@@ -35,6 +35,8 @@ usercontroller:
     exception3: please fill in username and password
     exception4: user email not found
     exception5: Invalid Login.Please check your username and password
+user-controller:
+  message: wrong credentials
 
 eureka:
   client:
