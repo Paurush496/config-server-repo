@@ -9,11 +9,11 @@ spring:
 #   driverClassName: com.mysql.jdbc.Driver# JPA properties
 #   database-platform: org.hibernate.dialect.MySQL5InnoDBDialectDialect
   jpa:
-    openInView: false
+#    openInView: false
     show_sql: true
     generate-ddl: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5Dialect
 
 # kafka.consumer.properties. json.trusted.packages :  co.orders.feedme.feed.domain
