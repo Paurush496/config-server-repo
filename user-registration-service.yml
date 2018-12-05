@@ -4,13 +4,13 @@ management:
 spring:
   application:
     name: user-registration-service
-  data:
-    mongodb:
-      database: userDetails
-      uri: mongodb://127.0.0.1/userDetails 
 #  data:
-#  mongodb:
-#    uri: mongodb://localhost/userDetails
+#    mongodb:
+#      database: userDetails
+#      uri: mongodb://127.0.0.1/userDetails 
+  data:
+  mongodb:
+    uri: mongodb://127.0.0.1/userDetails
 eureka:
   client:
     service-url:
