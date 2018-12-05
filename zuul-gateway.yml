@@ -16,6 +16,8 @@ zuul:
             url: http://localhost:8181
         query-engine:
             url: http://localhost:8185
+        user-authentication:
+            url: http://localhost:8184
 #tells about the Eureka server details and its refresh time
 eureka:         
     instance:
