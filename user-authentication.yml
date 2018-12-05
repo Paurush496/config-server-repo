@@ -12,7 +12,8 @@ spring:
     openInView: false
     show_sql: true
     generate-ddl: false
-    hibernate.ddl-auto: update
+    hibernate:
+      ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5Dialect
 
 # kafka.consumer.properties. json.trusted.packages :  co.orders.feedme.feed.domain
