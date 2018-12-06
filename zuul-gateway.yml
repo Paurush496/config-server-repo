@@ -18,7 +18,7 @@ zuul:
             url: http://localhost:8185
         user-authentication:
             url: http://localhost:8184
-        web-adaptor:
+        web-adapter:
             url: http://localhost:8100
 #tells about the Eureka server details and its refresh time
 eureka:         
