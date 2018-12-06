@@ -8,6 +8,10 @@ folder:
     doc_type_messgae: Found a folder while iterating.
     parse_message: Cannot parse a folder.
 
+multipart:
+    maxFileSize: 50MB
+    maxRequestSize: 50MB
+    
 README:
     metadata: Content-Encoding=ISO-8859-1 Content-Type=text/plain; charset=ISO-8859-1
 
