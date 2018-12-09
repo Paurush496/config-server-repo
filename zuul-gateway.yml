@@ -9,7 +9,7 @@ zuul:
         extractor-service:
             url: http://localhost:8094
         document-identifier:
-            url: http://localhost:8083
+            url: http://localhost:8089
         input-kafka:
             url: http://localhost:8148
         user-registration-service:
