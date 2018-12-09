@@ -20,6 +20,8 @@ zuul:
             url: http://localhost:8184
         web-adapter:
             url: http://localhost:8100
+        docker:
+            url: http://localhost:9001
 #tells about the Eureka server details and its refresh time
 eureka:         
     instance:
